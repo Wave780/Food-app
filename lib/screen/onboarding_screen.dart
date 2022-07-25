@@ -1,15 +1,11 @@
 // ignore: file_names
 // ignore_for_file: import_of_legacy_library_into_null_safe
 
-
-
 import 'package:flutter/material.dart';
 import 'package:food_app/screen/first_screen.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
 import '../buttons_widget/button.dart';
-
-
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({Key? key}) : super(key: key);
@@ -20,7 +16,7 @@ class OnboardingPage extends StatelessWidget {
         pages: [
           PageViewModel(
               body: '',
-              titleWidget: const  Text(
+              titleWidget: const Text(
                 'Friendly to user',
                 style: TextStyle(
                   color: Color.fromARGB(255, 13, 13, 14),
@@ -28,12 +24,10 @@ class OnboardingPage extends StatelessWidget {
                   fontSize: 34,
                 ),
               ),
-              decoration: const  PageDecoration(pageColor: Colors.white),
-              image: Center(
-                  child: buildImage(
-                      'assets/images/Friendly.png'))),
+              decoration: const PageDecoration(pageColor: Colors.white),
+              image: Center(child: buildImage('assets/images/Friendly.png'))),
           PageViewModel(
-               titleWidget: const  Text(
+              titleWidget: const Text(
                 'Saves Time',
                 style: TextStyle(
                   color: Color.fromARGB(255, 13, 13, 14),
@@ -43,11 +37,9 @@ class OnboardingPage extends StatelessWidget {
               ),
               body: '',
               decoration: const PageDecoration(pageColor: Colors.white),
-              image: Center(
-                  child: buildImage(
-                      'assets/images/Time.png'))),
+              image: Center(child: buildImage('assets/images/Time.png'))),
           PageViewModel(
-             titleWidget: const  Text(
+              titleWidget: const Text(
                 'Quick Delivery',
                 style: TextStyle(
                   color: Color.fromARGB(255, 13, 44, 92),
@@ -57,9 +49,7 @@ class OnboardingPage extends StatelessWidget {
               ),
               body: '',
               decoration: const PageDecoration(pageColor: Colors.white),
-              image: Center(
-                  child: buildImage(
-                      'assets/images/Delivery.png')),
+              image: Center(child: buildImage('assets/images/Delivery.png')),
               footer: ButtonWidget(
                   text: 'Order Your Meal', onClicked: () => goToHome(context)))
         ],
