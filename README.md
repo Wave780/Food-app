@@ -16,3 +16,6 @@ A Food App Flutter project.
 
 ![Login Screen](assets/images/Login%20page.png)
 ## Login screen preview 
+
+![](assets/images/food%20app.gif)
+## Food App Preview
