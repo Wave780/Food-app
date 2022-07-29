@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_app/screen/forget_pass_screen.dart';
+import 'package:food_app/screen/otp_screen.dart';
 
 import '../buttons_widget/social_button.dart';
 
@@ -85,7 +86,8 @@ class LoginPage extends StatelessWidget {
                         shape: const StadiumBorder()),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () => Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => const OtpPage())),
                       child: const Text(
                         'Login with OTP',
                         style:
